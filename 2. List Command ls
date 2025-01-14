@@ -1,0 +1,28 @@
+lalcastro@Lals-Mac-mini ~ % whoami
+lalcastro
+lalcastro@Lals-Mac-mini ~ % pwd
+/Users/lalcastro
+lalcastro@Lals-Mac-mini ~ % ls
+AndroidStudioProjects	Desktop			Library			Pictures
+Applications		Documents		Movies			Postman
+AwesomeProject		Downloads		Music			Public
+lalcastro@Lals-Mac-mini ~ % ls -a
+.				.gitkraken			.zprofile
+..				.gk				.zprofile.pysave
+.CFUserTextEncoding		.gradle				.zsh_history
+.DS_Store			.hawtjni			.zsh_sessions
+.Trash				.idlerc				.zshrc
+.android			.lesshst			Applications
+.anydesk			.m2				AwesomeProject
+.aws				.npm				Desktop
+.bash_profile			.oracle_jre_usage		Documents
+.bundle				.python_history			Downloads
+.cache				.rbenv				Library
+.cocoapods			.ssh				Movies
+.config				.swiftpm			Music
+.emulator_console_auth_token	.tuist				Pictures
+.gem				.vscode				Postman
+.gitconfig			.yarn				Public
+.gitignore_global		.yarnrc
+lalcastro@Lals-Mac-mini ~ % 
+
