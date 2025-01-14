@@ -1,0 +1,63 @@
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		scan
+Expense Logo		Logo.pdf		Untitled
+Expense-Expert		Nila Frame PNG.png	Untitled.pages
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % touch thing
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		scan
+Expense Logo		Logo.pdf		Untitled		thing
+Expense-Expert		Nila Frame PNG.png	Untitled.pages
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % open thing
+lalcastro@Lals-Mac-mini Documents % touch document.xls
+lalcastro@Lals-Mac-mini Documents % open document.xls 
+lalcastro@Lals-Mac-mini Documents % ls -la
+total 66824
+drwx------@ 19 lalcastro  staff       608 Jan 14 21:42 .
+drwxr-x---+ 50 lalcastro  staff      1600 Jan 14 20:54 ..
+-rw-r--r--@  1 lalcastro  staff      8196 Jan 14 21:11 .DS_Store
+-rw-r--r--   1 lalcastro  staff         0 Mar 11  2023 .localized
+drwxr-xr-x@ 11 lalcastro  staff       352 Jan 14 20:28 Expense
+drwxr-xr-x@  4 lalcastro  staff       128 Dec 12 01:04 Expense Logo
+drwxr-xr-x   8 lalcastro  staff       256 Oct 21 15:45 Expense-Expert
+drwxr-xr-x   5 lalcastro  staff       160 Jan  7 18:14 GitHub
+drwxr-xr-x@  3 lalcastro  staff        96 Dec 12 00:52 Logo
+-rw-r--r--@  1 lalcastro  staff      8516 Dec 12 00:49 Logo.pdf
+-rw-r--r--@  1 lalcastro  staff  34079992 Dec  7 20:38 Nila Frame PNG.png
+drwxr-xr-x   5 lalcastro  staff       160 Oct 18 11:59 PushNotificationDemo
+drwxr-xr-x@  5 lalcastro  staff       160 Dec 11 21:50 Screenshots
+drwxr-xr-x@  4 lalcastro  staff       128 Dec 12 01:09 Untitled
+-rw-r--r--@  1 lalcastro  staff    106136 Dec 12 01:18 Untitled.pages
+drwxr-xr-x@  6 lalcastro  staff       192 Dec 12 01:20 Untitled2
+-rw-r--r--@  1 lalcastro  staff         0 Jan 14 21:42 document.xls
+drwx------  19 lalcastro  staff       608 Feb 19  2023 scan
+-rw-r--r--@  1 lalcastro  staff         0 Jan 14 21:41 thing
+lalcastro@Lals-Mac-mini Documents % touch Nila\ Frame\ PNG.png 
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		document.xls
+Expense Logo		Logo.pdf		Untitled		scan
+Expense-Expert		Nila Frame PNG.png	Untitled.pages		thing
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % ls -la                    
+total 66824
+drwx------@ 19 lalcastro  staff       608 Jan 14 21:42 .
+drwxr-x---+ 50 lalcastro  staff      1600 Jan 14 20:54 ..
+-rw-r--r--@  1 lalcastro  staff      8196 Jan 14 21:11 .DS_Store
+-rw-r--r--   1 lalcastro  staff         0 Mar 11  2023 .localized
+drwxr-xr-x@ 11 lalcastro  staff       352 Jan 14 20:28 Expense
+drwxr-xr-x@  4 lalcastro  staff       128 Dec 12 01:04 Expense Logo
+drwxr-xr-x   8 lalcastro  staff       256 Oct 21 15:45 Expense-Expert
+drwxr-xr-x   5 lalcastro  staff       160 Jan  7 18:14 GitHub
+drwxr-xr-x@  3 lalcastro  staff        96 Dec 12 00:52 Logo
+-rw-r--r--@  1 lalcastro  staff      8516 Dec 12 00:49 Logo.pdf
+-rw-r--r--@  1 lalcastro  staff  34079992 Jan 14 21:43 Nila Frame PNG.png
+drwxr-xr-x   5 lalcastro  staff       160 Oct 18 11:59 PushNotificationDemo
+drwxr-xr-x@  5 lalcastro  staff       160 Dec 11 21:50 Screenshots
+drwxr-xr-x@  4 lalcastro  staff       128 Dec 12 01:09 Untitled
+-rw-r--r--@  1 lalcastro  staff    106136 Dec 12 01:18 Untitled.pages
+drwxr-xr-x@  6 lalcastro  staff       192 Dec 12 01:20 Untitled2
+-rw-r--r--@  1 lalcastro  staff         0 Jan 14 21:42 document.xls
+drwx------  19 lalcastro  staff       608 Feb 19  2023 scan
+-rw-r--r--@  1 lalcastro  staff         0 Jan 14 21:41 thing
+lalcastro@Lals-Mac-mini Documents % 
