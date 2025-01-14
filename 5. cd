@@ -1,0 +1,42 @@
+lalcastro@Lals-Mac-mini Documents % cd
+lalcastro@Lals-Mac-mini ~ % pwd
+/Users/lalcastro
+lalcastro@Lals-Mac-mini ~ % cd Desktop 
+lalcastro@Lals-Mac-mini Desktop % pwd
+/Users/lalcastro/Desktop
+lalcastro@Lals-Mac-mini Desktop % ls
+lalcastro@Lals-Mac-mini Desktop % ls -la
+total 16
+drwx------+  4 lalcastro  staff   128 Sep 21 16:21 .
+drwxr-x---+ 50 lalcastro  staff  1600 Jan 14 20:54 ..
+-rw-r--r--@  1 lalcastro  staff  6148 Jan 14 20:27 .DS_Store
+-rw-r--r--   1 lalcastro  staff     0 Mar 11  2023 .localized
+lalcastro@Lals-Mac-mini Desktop % cd
+lalcastro@Lals-Mac-mini ~ % cd Documents 
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		scan
+Expense Logo		Logo.pdf		Untitled
+Expense-Expert		Nila Frame PNG.png	Untitled.pages
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % cd Screenshots 
+lalcastro@Lals-Mac-mini Screenshots % ls
+Screenshot 2024-12-09 at 9.18.08 PM.png		Screenshot 2024-12-11 at 9.49.55 PM.png
+lalcastro@Lals-Mac-mini Screenshots % pwd
+/Users/lalcastro/Documents/Screenshots
+lalcastro@Lals-Mac-mini Screenshots % cd ..
+lalcastro@Lals-Mac-mini Documents % pwd
+/Users/lalcastro/Documents
+lalcastro@Lals-Mac-mini Documents % cd ..
+lalcastro@Lals-Mac-mini ~ % pwd
+/Users/lalcastro
+lalcastro@Lals-Mac-mini ~ % cd Documents/Screenshots 
+lalcastro@Lals-Mac-mini Screenshots % pwd
+/Users/lalcastro/Documents/Screenshots
+lalcastro@Lals-Mac-mini Screenshots % cd
+lalcastro@Lals-Mac-mini ~ % pwd
+/Users/lalcastro
+lalcastro@Lals-Mac-mini ~ % cd Documents/Screenshots 
+lalcastro@Lals-Mac-mini Screenshots % cd ../..
+lalcastro@Lals-Mac-mini ~ % pwd
+/Users/lalcastro
+lalcastro@Lals-Mac-mini ~ % 
