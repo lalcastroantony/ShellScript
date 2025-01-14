@@ -1,0 +1,14 @@
+lalcastro@Lals-Mac-mini ~ % ls -l
+total 0
+drwx------@   4 lalcastro  staff   128 Sep 13 11:23 Applications
+drwxr-xr-x    2 lalcastro  staff    64 Mar 27  2023 AwesomeProject
+drwx------+   4 lalcastro  staff   128 Sep 21 16:21 Desktop
+drwx------@  16 lalcastro  staff   512 Dec 12 01:18 Documents
+drwx------@  34 lalcastro  staff  1088 Jan 14 20:42 Downloads
+drwx------@ 110 lalcastro  staff  3520 Jan  4 11:39 Library
+drwx------    9 lalcastro  staff   288 Nov 30 13:00 Movies
+drwx------+   5 lalcastro  staff   160 Mar 24  2024 Music
+drwx------+   7 lalcastro  staff   224 Nov 30 10:16 Pictures
+drwxr-xr-x@   4 lalcastro  staff   128 Oct 10 17:43 Postman
+drwxr-xr-x+   4 lalcastro  staff   128 Mar 11  2023 Public
+lalcastro@Lals-Mac-mini ~ % 
