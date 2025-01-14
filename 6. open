@@ -1,0 +1,13 @@
+lalcastro@Lals-Mac-mini ~ % cd Documents 
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		scan
+Expense Logo		Logo.pdf		Untitled
+Expense-Expert		Nila Frame PNG.png	Untitled.pages
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % open Nila\ Frame\ PNG.png 
+lalcastro@Lals-Mac-mini Documents % open Screenshots 
+lalcastro@Lals-Mac-mini Documents % pwd
+/Users/lalcastro/Documents
+lalcastro@Lals-Mac-mini Documents % open .
+lalcastro@Lals-Mac-mini Documents % 
+
