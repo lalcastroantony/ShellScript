@@ -1,0 +1,40 @@
+lalcastro@Lals-Mac-mini ~ % ls
+Applications	Desktop		Downloads	Movies		Pictures	Public
+AwesomeProject	Documents	Library		Music		Postman
+lalcastro@Lals-Mac-mini ~ % ls Documents 
+Expense			GitHub			PushNotificationDemo	Untitled.pages
+Expense Logo		Logo			Screenshots		Untitled2
+Expense-Expert		Logo.pdf		Untitled		scan
+lalcastro@Lals-Mac-mini ~ % ls -la Documents 
+total 256
+drwx------@ 16 lalcastro  staff     512 Dec 12 01:18 .
+drwxr-x---+ 50 lalcastro  staff    1600 Jan 14 20:54 ..
+-rw-r--r--@  1 lalcastro  staff    8196 Dec 12 01:20 .DS_Store
+-rw-r--r--   1 lalcastro  staff       0 Mar 11  2023 .localized
+drwxr-xr-x@ 11 lalcastro  staff     352 Jan 14 20:28 Expense
+drwxr-xr-x@  4 lalcastro  staff     128 Dec 12 01:04 Expense Logo
+drwxr-xr-x   8 lalcastro  staff     256 Oct 21 15:45 Expense-Expert
+drwxr-xr-x   5 lalcastro  staff     160 Jan  7 18:14 GitHub
+drwxr-xr-x@  3 lalcastro  staff      96 Dec 12 00:52 Logo
+-rw-r--r--@  1 lalcastro  staff    8516 Dec 12 00:49 Logo.pdf
+drwxr-xr-x   5 lalcastro  staff     160 Oct 18 11:59 PushNotificationDemo
+drwxr-xr-x@  5 lalcastro  staff     160 Dec 11 21:50 Screenshots
+drwxr-xr-x@  4 lalcastro  staff     128 Dec 12 01:09 Untitled
+-rw-r--r--@  1 lalcastro  staff  106136 Dec 12 01:18 Untitled.pages
+drwxr-xr-x@  6 lalcastro  staff     192 Dec 12 01:20 Untitled2
+drwx------  19 lalcastro  staff     608 Feb 19  2023 scan
+lalcastro@Lals-Mac-mini ~ % file Logo.pdf
+Logo.pdf: cannot open `Logo.pdf' (No such file or directory)
+lalcastro@Lals-Mac-mini ~ % cd Documents 
+lalcastro@Lals-Mac-mini Documents % file Logo.pdf
+Logo.pdf: PDF document, version 1.3, 1 pages
+lalcastro@Lals-Mac-mini Documents % file untitled.pages
+untitled.pages: Zip archive data, at least v2.0 to extract, compression method=store
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Logo			Screenshots		scan
+Expense Logo		Logo.pdf		Untitled
+Expense-Expert		Nila Frame PNG.png	Untitled.pages
+GitHub			PushNotificationDemo	Untitled2
+lalcastro@Lals-Mac-mini Documents % file Nila\ Frame\ PNG.png 
+Nila Frame PNG.png: PNG image data, 6250 x 5000, 8-bit/color RGBA, non-interlaced
+lalcastro@Lals-Mac-mini Documents % 
