@@ -1,0 +1,62 @@
+lalcastro@Lals-Mac-mini newfolder % cd
+lalcastro@Lals-Mac-mini ~ % echo "something"
+something
+lalcastro@Lals-Mac-mini ~ % echo "hello there" > newtext.txt
+lalcastro@Lals-Mac-mini ~ % ls
+Applications	Documents	Movies		Postman
+AwesomeProject	Downloads	Music		Public
+Desktop		Library		Pictures	newtext.txt
+lalcastro@Lals-Mac-mini ~ % cat newtext.txt 
+hello there
+lalcastro@Lals-Mac-mini ~ % echo "something else" > newtext.txt
+lalcastro@Lals-Mac-mini ~ % cat newtext.txt                    
+something else
+lalcastro@Lals-Mac-mini ~ % echo "I want to add this line" >> newtext.txt
+lalcastro@Lals-Mac-mini ~ % cat newtext.txt                              
+something else
+I want to add this line
+lalcastro@Lals-Mac-mini ~ % echo "add 3rd line" >> newtext.txt
+lalcastro@Lals-Mac-mini ~ % cat newtext.txt                   
+something else
+I want to add this line
+add 3rd line
+lalcastro@Lals-Mac-mini ~ % ls -l .
+total 8
+drwx------@   4 lalcastro  staff   128 Sep 13 11:23 Applications
+drwxr-xr-x    2 lalcastro  staff    64 Mar 27  2023 AwesomeProject
+drwx------+   4 lalcastro  staff   128 Sep 21 16:21 Desktop
+drwx------@  20 lalcastro  staff   640 Jan 23 18:01 Documents
+drwx------@  36 lalcastro  staff  1152 Jan 23 18:17 Downloads
+drwx------@ 110 lalcastro  staff  3520 Jan  4 11:39 Library
+drwx------    9 lalcastro  staff   288 Nov 30 13:00 Movies
+drwx------+   5 lalcastro  staff   160 Mar 24  2024 Music
+drwx------+   7 lalcastro  staff   224 Nov 30 10:16 Pictures
+drwxr-xr-x@   4 lalcastro  staff   128 Oct 10 17:43 Postman
+drwxr-xr-x+   4 lalcastro  staff   128 Mar 11  2023 Public
+-rw-r--r--    1 lalcastro  staff    52 Jan 23 18:59 newtext.txt
+lalcastro@Lals-Mac-mini ~ % ls -l . >> newtext.txt 
+lalcastro@Lals-Mac-mini ~ % cat newtext.txt 
+something else
+I want to add this line
+add 3rd line
+total 8
+drwx------@   4 lalcastro  staff   128 Sep 13 11:23 Applications
+drwxr-xr-x    2 lalcastro  staff    64 Mar 27  2023 AwesomeProject
+drwx------+   4 lalcastro  staff   128 Sep 21 16:21 Desktop
+drwx------@  20 lalcastro  staff   640 Jan 23 18:01 Documents
+drwx------@  36 lalcastro  staff  1152 Jan 23 18:17 Downloads
+drwx------@ 110 lalcastro  staff  3520 Jan  4 11:39 Library
+drwx------    9 lalcastro  staff   288 Nov 30 13:00 Movies
+drwx------+   5 lalcastro  staff   160 Mar 24  2024 Music
+drwx------+   7 lalcastro  staff   224 Nov 30 10:16 Pictures
+drwxr-xr-x@   4 lalcastro  staff   128 Oct 10 17:43 Postman
+drwxr-xr-x+   4 lalcastro  staff   128 Mar 11  2023 Public
+-rw-r--r--    1 lalcastro  staff    52 Jan 23 18:59 newtext.txt
+lalcastro@Lals-Mac-mini ~ % echo "line1 from file 1" > line1.txt
+lalcastro@Lals-Mac-mini ~ % echo "line2 from file 2" > line2.txt
+lalcastro@Lals-Mac-mini ~ % touch line3.txt
+lalcastro@Lals-Mac-mini ~ % cat line1.txt line2.txt > line3.txt 
+lalcastro@Lals-Mac-mini ~ % cat line3.txt
+line1 from file 1
+line2 from file 2
+lalcastro@Lals-Mac-mini ~ % 
