@@ -1,0 +1,65 @@
+lalcastro@Lals-Mac-mini ~ % cd Documents/newfolder/         
+lalcastro@Lals-Mac-mini newfolder % ls A-folder | less
+lalcastro@Lals-Mac-mini newfolder % ls A-folder > temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % cat temporaryoutput.txt 
+1.txt
+1a.txt
+3.txt
+a.html
+aaa.txt
+stuff
+lalcastro@Lals-Mac-mini newfolder % less temporaryoutput.txt 
+lalcastro@Lals-Mac-mini newfolder % 
+lalcastro@Lals-Mac-mini newfolder % 
+lalcastro@Lals-Mac-mini newfolder % ls     
+1.txt			A-folder		a.html
+1a.txt			B-folder		aaa.txt
+3.txt			C-folder		temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % cat 1.txt 
+write something
+lalcastro@Lals-Mac-mini newfolder % ls . > 1.txt 
+lalcastro@Lals-Mac-mini newfolder % cat 1.txt   
+1.txt
+1a.txt
+3.txt
+A-folder
+B-folder
+C-folder
+a.html
+aaa.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % tail -4 1.txt 
+C-folder
+a.html
+aaa.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % cat 1.txt    
+1.txt
+1a.txt
+3.txt
+A-folder
+B-folder
+C-folder
+a.html
+aaa.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % ls 
+1.txt			A-folder		a.html
+1a.txt			B-folder		aaa.txt
+3.txt			C-folder		temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % ls | tail -3
+a.html
+aaa.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % ls | tail -3 | tail -1
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % ls | tail -3 | sort   
+a.html
+aaa.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % ls | tail -3 | sort > myfile.txt
+lalcastro@Lals-Mac-mini newfolder % cat myfile.txt 
+aaa.txt
+myfile.txt
+temporaryoutput.txt
+lalcastro@Lals-Mac-mini newfolder % 
