@@ -1,0 +1,26 @@
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+2.txt		B-folder	aaa.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % cp b.txt b2.txt
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+2.txt		B-folder	aaa.txt		b2.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % nano 1.txt 
+lalcastro@Lals-Mac-mini newfolder % nano 1.txt
+lalcastro@Lals-Mac-mini newfolder % cat 1.txt
+write something
+lalcastro@Lals-Mac-mini newfolder % cp 1.txt 1a.txt
+lalcastro@Lals-Mac-mini newfolder % cat 1a.txt
+write something
+lalcastro@Lals-Mac-mini newfolder % cp b2.txt B-folder 
+lalcastro@Lals-Mac-mini newfolder % cp a.html A-folder 
+lalcastro@Lals-Mac-mini newfolder % rm 2.txt
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+1a.txt		B-folder	aaa.txt		b2.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % rm A-folder/a.html 
+lalcastro@Lals-Mac-mini newfolder % 
+
