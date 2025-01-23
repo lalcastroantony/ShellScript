@@ -1,0 +1,44 @@
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+1a.txt		B-folder	aaa.txt		b2.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % file 1.txt 3.txt
+1.txt: ASCII text
+3.txt: empty
+lalcastro@Lals-Mac-mini newfolder % file *.txt
+1.txt:   ASCII text
+1a.txt:  ASCII text
+3.txt:   empty
+aaa.txt: empty
+b.txt:   empty
+b2.txt:  empty
+lalcastro@Lals-Mac-mini newfolder % file 1* 
+1.txt:  ASCII text
+1a.txt: ASCII text
+lalcastro@Lals-Mac-mini newfolder % mv *.txt A-folder 
+lalcastro@Lals-Mac-mini newfolder % ls
+A-folder	C-folder	b.html
+B-folder	a.html
+lalcastro@Lals-Mac-mini newfolder % cd A-folder 
+lalcastro@Lals-Mac-mini A-folder % ls
+1.txt	1a.txt	3.txt	aaa.txt	b.txt	b2.txt
+lalcastro@Lals-Mac-mini A-folder % cd ..
+lalcastro@Lals-Mac-mini newfolder % mv A-folder/*.txt .
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+1a.txt		B-folder	aaa.txt		b2.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % cp b* B-folder 
+lalcastro@Lals-Mac-mini newfolder % ls B-folder 
+b.html	b.txt	b2.txt
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		A-folder	a.html		b.txt
+1a.txt		B-folder	aaa.txt		b2.txt
+3.txt		C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % rm b*
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		3.txt		B-folder	a.html
+1a.txt		A-folder	C-folder	aaa.txt
+lalcastro@Lals-Mac-mini newfolder % rm B-folder/*
+zsh: sure you want to delete all the files in /Users/lalcastro/Documents/newfolder/B-folder [yn]? y
+lalcastro@Lals-Mac-mini newfolder % 
