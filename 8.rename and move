@@ -1,0 +1,31 @@
+lalcastro@Lals-Mac-mini ~ % cd Documents 
+lalcastro@Lals-Mac-mini Documents % mkdir newfolder
+lalcastro@Lals-Mac-mini Documents % ls
+Expense			Nila Frame PNG.png	document.xls
+Expense Logo		PushNotificationDemo	newfolder
+Expense-Expert		Screenshots		scan
+GitHub			Untitled		thing
+Logo			Untitled.pages
+Logo.pdf		Untitled2
+lalcastro@Lals-Mac-mini Documents % cd newfolder 
+lalcastro@Lals-Mac-mini newfolder % touch 1.txt
+lalcastro@Lals-Mac-mini newfolder % touch 2.txt 3.txt
+lalcastro@Lals-Mac-mini newfolder % touch a.txt b.txt
+lalcastro@Lals-Mac-mini newfolder % touch a.html b.html
+lalcastro@Lals-Mac-mini newfolder % mkdir A-folder B-folder C-folder
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		3.txt		B-folder	a.html		b.html
+2.txt		A-folder	C-folder	a.txt		b.txt
+lalcastro@Lals-Mac-mini newfolder % mv a.txt aaa.txt
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		3.txt		B-folder	a.html		b.html
+2.txt		A-folder	C-folder	aaa.txt		b.txt
+lalcastro@Lals-Mac-mini newfolder % mv aaa.txt A-folder 
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		3.txt		B-folder	a.html		b.txt
+2.txt		A-folder	C-folder	b.html
+lalcastro@Lals-Mac-mini newfolder % mv A-folder/aaa.txt .
+lalcastro@Lals-Mac-mini newfolder % ls
+1.txt		3.txt		B-folder	a.html		b.html
+2.txt		A-folder	C-folder	aaa.txt		b.txt
+lalcastro@Lals-Mac-mini newfolder % 
