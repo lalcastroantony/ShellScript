@@ -1,0 +1,29 @@
+lalcastro@Lals-MacBook-Pro newFolder % cat a.txt
+something
+Son
+
+Projects
+newFolder
+lalcastro@Lals-MacBook-Pro newFolder % grep s a.txt 
+something
+Projects
+lalcastro@Lals-MacBook-Pro newFolder % grep -i s a.txt
+something
+Son
+Projects
+lalcastro@Lals-MacBook-Pro newFolder % grep so a.txt 
+something
+lalcastro@Lals-MacBook-Pro newFolder % grep -i so a.txt
+something
+Son
+lalcastro@Lals-MacBook-Pro newFolder % ls
+A-folder	B-folder	C-folder	a.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls | grep t
+a.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls
+A-folder	B-folder	C-folder	a.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls | grep -v t
+A-folder
+B-folder
+C-folder
+lalcastro@Lals-MacBook-Pro newFolder % 
