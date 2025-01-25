@@ -1,0 +1,18 @@
+lalcastro@Lals-MacBook-Pro ~ % find Documents/newFolder -name a.txt
+Documents/newFolder/a.txt
+lalcastro@Lals-MacBook-Pro ~ % find Documents/newFolder 
+Documents/newFolder
+Documents/newFolder/.DS_Store
+Documents/newFolder/B-folder
+Documents/newFolder/a.txt
+Documents/newFolder/C-folder
+Documents/newFolder/A-folder
+lalcastro@Lals-MacBook-Pro ~ % find Documents/newFolder -type file
+Documents/newFolder/.DS_Store
+Documents/newFolder/a.txt
+lalcastro@Lals-MacBook-Pro ~ % find Documents/newFolder -type d     
+Documents/newFolder
+Documents/newFolder/B-folder
+Documents/newFolder/C-folder
+Documents/newFolder/A-folder
+lalcastro@Lals-MacBook-Pro ~ % 
