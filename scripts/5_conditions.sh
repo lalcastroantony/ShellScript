@@ -2,7 +2,7 @@
 
 echo "Conditions"
 
-if [[ 1 -eq 1 ]]; then
+if [[ 1 == 1 ]]; then
     echo "1 is equal to 1"
 fi
 
@@ -34,3 +34,29 @@ fi
 
 # 3 -ge 3 		3 >= 3
 # 3 -le 3 		3 <= 3
+
+
+if [ "abcd" == "aBcd" ]; then
+	echo "EQUAL"
+fi
+
+echo "moving on"
+
+echo "--------------"
+
+if [ "abcd" != "abcd" ]; then
+	echo "different"
+
+fi
+
+echo "end"
+
+######################
+
+read -p "Type the password to know the file name: " pass
+if [ $pass == "Table1X" ]; then
+ 	echo "Correct!  the file name is:  catfile.txt"
+else
+	echo "incorrect"
+	exit
+fi
