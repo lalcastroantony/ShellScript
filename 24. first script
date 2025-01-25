@@ -1,0 +1,43 @@
+➜  ~ pwd
+/Users/lalcastro
+➜  ~ touch myscript.txt
+➜  ~ open myscript.txt 
+➜  ~ which bash
+/bin/bash
+➜  ~ ./myscript.txt 
+zsh: permission denied: ./myscript.txt
+➜  ~ ls -l
+total 16
+drwxr-xr-x   2 lalcastro  staff    64 Dec 19 19:59 Applications
+drwx------+  4 lalcastro  staff   128 Jan 21 18:13 Desktop
+drwx------@  7 lalcastro  staff   224 Jan 25 14:13 Documents
+drwx------+ 30 lalcastro  staff   960 Jan 25 12:17 Downloads
+drwx------@ 94 lalcastro  staff  3008 Dec 20 09:26 Library
+drwx------   4 lalcastro  staff   128 Oct 22 07:35 Movies
+drwx------+  4 lalcastro  staff   128 Oct 22 07:35 Music
+drwx------+  4 lalcastro  staff   128 Oct 22 07:33 Pictures
+drwxr-xr-x+  4 lalcastro  staff   128 Oct 22 07:32 Public
+-rwxr-xr-x   1 lalcastro  staff    87 Jan 25 17:05 b.txt
+-rw-r--r--@  1 lalcastro  staff    62 Jan 25 17:29 myscript.txt
+➜  ~ chmod +x myscript.txt 
+➜  ~ ls -l                
+total 16
+drwxr-xr-x   2 lalcastro  staff    64 Dec 19 19:59 Applications
+drwx------+  4 lalcastro  staff   128 Jan 21 18:13 Desktop
+drwx------@  7 lalcastro  staff   224 Jan 25 14:13 Documents
+drwx------+ 30 lalcastro  staff   960 Jan 25 12:17 Downloads
+drwx------@ 94 lalcastro  staff  3008 Dec 20 09:26 Library
+drwx------   4 lalcastro  staff   128 Oct 22 07:35 Movies
+drwx------+  4 lalcastro  staff   128 Oct 22 07:35 Music
+drwx------+  4 lalcastro  staff   128 Oct 22 07:33 Pictures
+drwxr-xr-x+  4 lalcastro  staff   128 Oct 22 07:32 Public
+-rwxr-xr-x   1 lalcastro  staff    87 Jan 25 17:05 b.txt
+-rwxr-xr-x@  1 lalcastro  staff    62 Jan 25 17:29 myscript.txt
+➜  ~ ./myscript.txt       
+Hello World!
+➜  ~ cat myscript.txt 
+#! /bin/bash
+
+echo "Hello World!" #Saying Hello to the world.
+➜  ~ 
+
