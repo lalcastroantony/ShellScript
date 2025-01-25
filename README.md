@@ -1,6 +1,6 @@
 # Shell Script Repository
 
-This repository contains a collection of useful shell scripts that can help with various tasks and serve as a reference for shell scripting. The scripts are organized and documented to make them easy to understand and use.
+This repository contains a collection of useful shell scripts that can help with various tasks and serve as a reference for shell scripting. The scripts are organized and documented to make them easy to understand and use. Additionally, this repository includes numbered files showcasing terminal outputs for basic commands, allowing users to refer to them for better understanding.
 
 
 ## Getting Started
