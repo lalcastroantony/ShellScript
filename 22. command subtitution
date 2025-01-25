@@ -1,0 +1,52 @@
+➜  ~ c=mycat
+➜  ~ echo $c
+mycat
+➜  ~ d=$(ls)
+➜  ~ echo d
+d
+➜  ~ echo $d
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+➜  ~ cd ~/Documents/newFolder 
+➜  newFolder ls
+A-folder                   C-folder                   sample_semi_colon_data.txt
+B-folder                   a.txt                      sample_table_data.txt
+➜  newFolder cd
+➜  ~ pwd
+/Users/lalcastro
+➜  ~ cd ~/Documents/newFolder
+➜  newFolder pwd
+/Users/lalcastro/Documents/newFolder
+➜  newFolder n=$(pwd)
+➜  newFolder echo $n
+/Users/lalcastro/Documents/newFolder
+➜  newFolder cd
+➜  ~ pwd
+/Users/lalcastro
+➜  ~ ls $n
+A-folder                   C-folder                   sample_semi_colon_data.txt
+B-folder                   a.txt                      sample_table_data.txt
+➜  ~ $n
+➜  newFolder pwd
+/Users/lalcastro/Documents/newFolder
+➜  newFolder cd
+➜  ~ touch b.txt
+➜  ~ ls
+Applications Documents    Library      Music        Public
+Desktop      Downloads    Movies       Pictures     b.txt
+➜  ~ cp b.txt $n
+➜  ~ ls $n
+A-folder                   a.txt                      sample_table_data.txt
+B-folder                   b.txt
+C-folder                   sample_semi_colon_data.txt
+➜  ~ echo "$(date)"
+Sat Jan 25 16:17:25 IST 2025
+➜  ~ echo "`date`" 
+Sat Jan 25 16:18:12 IST 2025
