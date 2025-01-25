@@ -12,9 +12,9 @@ To use the scripts in this repository:
    cd ShellScript
    ```
 
-2. Run any script:
+2. Run any script from scripts folder:
    ```bash
-   ./scripts/script_name.sh
+   ./script_name.sh
    ```
    Make sure the script has execution permissions. If not, you can add them:
    ```bash
