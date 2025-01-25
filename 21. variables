@@ -1,0 +1,35 @@
+Last login: Sat Jan 25 15:52:11 on ttys000
+➜  ~ myvar=573
+➜  ~ echo $myvar
+573
+➜  ~ echo value of my my var is $myvar
+value of my my var is 573
+➜  ~ c=cat
+➜  ~ echo "I have $myvar $c"
+I have 573 cat
+➜  ~ h=hello
+➜  ~ echo $h
+hello
+➜  ~ unset h
+➜  ~ echo $h
+
+➜  ~ echo ${myvar}
+573
+➜  ~ echo "I have $myvar ${c}s" 
+I have 573 cats
+➜  ~ mycommand=ls
+➜  ~ echo $mycommand
+ls
+➜  ~ $mycommand
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+➜  ~ command2=echo
+➜  ~ $command2 "hello"
+hello
+➜  ~ echo $USER
+lalcastro
+➜  ~ echo $HOME
+/Users/lalcastro
+➜  ~ echo $PATH
+/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin
+➜  ~ 
