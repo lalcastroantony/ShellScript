@@ -1,0 +1,170 @@
+lalcastro@Lals-MacBook-Pro newFolder % mv ~/Downloads/sample_table_data.txt .
+lalcastro@Lals-MacBook-Pro newFolder % ls
+A-folder		C-folder		sample_table_data.txt
+B-folder		a.txt
+lalcastro@Lals-MacBook-Pro newFolder % cat sample_table_data.txt 
+Name         Age     Department       Salary
+John         30      Engineering      50000
+Alice        28      HR               45000
+Bob          35      Marketing        55000
+Eve          40      Finance          60000
+Charlie      25      Engineering      40000
+Diana        32      Marketing        48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print}' sample_table_data.txt 
+Name         Age     Department       Salary
+John         30      Engineering      50000
+Alice        28      HR               45000
+Bob          35      Marketing        55000
+Eve          40      Finance          60000
+Charlie      25      Engineering      40000
+Diana        32      Marketing        48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1}' sample_table_data.txt
+Name
+John
+Alice
+Bob
+Eve
+Charlie
+Diana
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $2}' sample_table_data.txt
+Age
+30
+28
+35
+40
+25
+32
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1 $2}' sample_table_data.txt
+NameAge
+John30
+Alice28
+Bob35
+Eve40
+Charlie25
+Diana32
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1,$2}' sample_table_data.txt
+Name Age
+John 30
+Alice 28
+Bob 35
+Eve 40
+Charlie 25
+Diana 32
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1,$4}' sample_table_data.txt
+Name Salary
+John 50000
+Alice 45000
+Bob 55000
+Eve 60000
+Charlie 40000
+Diana 48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1,$2,$4}' sample_table_data.txt
+Name Age Salary
+John 30 50000
+Alice 28 45000
+Bob 35 55000
+Eve 40 60000
+Charlie 25 40000
+Diana 32 48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $0}' sample_table_data.txt
+Name         Age     Department       Salary
+John         30      Engineering      50000
+Alice        28      HR               45000
+Bob          35      Marketing        55000
+Eve          40      Finance          60000
+Charlie      25      Engineering      40000
+Diana        32      Marketing        48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $NF}' sample_table_data.txt
+Salary
+50000
+45000
+55000
+60000
+40000
+48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $(NF-1)}' sample_table_data.txt
+Department
+Engineering
+HR
+Marketing
+Finance
+Engineering
+Marketing
+lalcastro@Lals-MacBook-Pro newFolder % awk 'NR==2 {print $(NF-1)}' sample_table_data.txt
+Engineering
+lalcastro@Lals-MacBook-Pro newFolder % awk 'NR==2 {print}' sample_table_data.txt 
+John         30      Engineering      50000
+lalcastro@Lals-MacBook-Pro newFolder % awk 'NR==2,NR==5 {print $0}' sample_table_data.txt 
+John         30      Engineering      50000
+Alice        28      HR               45000
+Bob          35      Marketing        55000
+Eve          40      Finance          60000
+lalcastro@Lals-MacBook-Pro newFolder % awk 'NR==2;NR==5 {print $0}' sample_table_data.txt
+John         30      Engineering      50000
+Eve          40      Finance          60000
+lalcastro@Lals-MacBook-Pro newFolder % mv ~/Downloads/sample_semi_colon_data.txt .
+lalcastro@Lals-MacBook-Pro newFolder % cat sample_semi_colon_data.txt 
+Name;Age;Department;Salary
+John;30;Engineering;50000
+Alice;28;HR;45000
+Bob;35;Marketing;55000
+Eve;40;Finance;60000
+Charlie;25;Engineering;40000
+Diana;32;Marketing;48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $0}' sample_semi_colon_data.txt 
+Name;Age;Department;Salary
+John;30;Engineering;50000
+Alice;28;HR;45000
+Bob;35;Marketing;55000
+Eve;40;Finance;60000
+Charlie;25;Engineering;40000
+Diana;32;Marketing;48000
+lalcastro@Lals-MacBook-Pro newFolder % awk -F ";" '{print $0}' sample_semi_colon_data.txt
+Name;Age;Department;Salary
+John;30;Engineering;50000
+Alice;28;HR;45000
+Bob;35;Marketing;55000
+Eve;40;Finance;60000
+Charlie;25;Engineering;40000
+Diana;32;Marketing;48000
+lalcastro@Lals-MacBook-Pro newFolder % awk -F ";" '{print $1}' sample_semi_colon_data.txt
+Name
+John
+Alice
+Bob
+Eve
+Charlie
+Diana
+lalcastro@Lals-MacBook-Pro newFolder % awk '{print $1}' sample_semi_colon_data.txt 
+Name;Age;Department;Salary
+John;30;Engineering;50000
+Alice;28;HR;45000
+Bob;35;Marketing;55000
+Eve;40;Finance;60000
+Charlie;25;Engineering;40000
+Diana;32;Marketing;48000
+lalcastro@Lals-MacBook-Pro newFolder % awk -F ";" '{print $1}' sample_semi_colon_data.txt
+Name
+John
+Alice
+Bob
+Eve
+Charlie
+Diana
+lalcastro@Lals-MacBook-Pro newFolder % awk -F ";" '{print $1,2}' sample_semi_colon_data.txt
+Name 2
+John 2
+Alice 2
+Bob 2
+Eve 2
+Charlie 2
+Diana 2
+lalcastro@Lals-MacBook-Pro newFolder % awk -F ";" '{print $1,$2}' sample_semi_colon_data.txt
+Name Age
+John 30
+Alice 28
+Bob 35
+Eve 40
+Charlie 25
+Diana 32
+lalcastro@Lals-MacBook-Pro newFolder % 
