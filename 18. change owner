@@ -1,0 +1,46 @@
+lalcastro@Lals-MacBook-Pro ~ % ls -l
+total 0
+drwxr-xr-x   2 lalcastro  staff    64 Dec 19 19:59 Applications
+drwx------+  4 lalcastro  staff   128 Jan 21 18:13 Desktop
+drwx------@  6 lalcastro  staff   192 Jan 25 10:12 Documents
+drwx------+ 30 lalcastro  staff   960 Jan 25 12:17 Downloads
+drwx------@ 94 lalcastro  staff  3008 Dec 20 09:26 Library
+drwx------   4 lalcastro  staff   128 Oct 22 07:35 Movies
+drwx------+  4 lalcastro  staff   128 Oct 22 07:35 Music
+drwx------+  4 lalcastro  staff   128 Oct 22 07:33 Pictures
+drwxr-xr-x+  4 lalcastro  staff   128 Oct 22 07:32 Public
+lalcastro@Lals-MacBook-Pro ~ % cd ~/Documents 
+lalcastro@Lals-MacBook-Pro Documents % ls
+Projects	newFolder
+lalcastro@Lals-MacBook-Pro Documents % ls -l         
+total 0
+drwxr-xr-x@ 5 lalcastro  staff  160 Jan 14 12:48 Projects
+drwxr-xr-x  9 lalcastro  staff  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % sudo chown lalcastro newFolder
+Password:
+lalcastro@Lals-MacBook-Pro Documents % sudo chown root newFolder
+lalcastro@Lals-MacBook-Pro Documents % ls -l                         
+total 0
+drwxr-xr-x@ 5 lalcastro  staff  160 Jan 14 12:48 Projects
+drwxr-xr-x  9 root       staff  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % sudo chown lalcastro newFolder
+lalcastro@Lals-MacBook-Pro Documents % ls -l                         
+total 0
+drwxr-xr-x@ 5 lalcastro  staff  160 Jan 14 12:48 Projects
+drwxr-xr-x  9 lalcastro  staff  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % sudo chgrp _guest newFolder 
+lalcastro@Lals-MacBook-Pro Documents % ls -l                      
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drwxr-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % cd newFolder 
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rw-r--r--  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % cd ..
+lalcastro@Lals-MacBook-Pro Documents % 
