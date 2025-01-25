@@ -1,0 +1,37 @@
+lalcastro@Lals-MacBook-Pro Documents % ls -l
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drwxr-xr-x  3 root       staff    96 Jan 25 14:13 closet
+drwxr-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % sudo touch closet/one/two/glass.txt
+lalcastro@Lals-MacBook-Pro Documents % ls -l
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drwxr-xr-x  3 root       staff    96 Jan 25 14:13 closet
+drwxr-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % cd closet
+lalcastro@Lals-MacBook-Pro closet % ls -R
+one
+
+./one:
+two
+
+./one/two:
+glass.txt
+lalcastro@Lals-MacBook-Pro closet % ls -l
+total 0
+drwxr-xr-x  3 root  staff  96 Jan 25 14:13 one
+lalcastro@Lals-MacBook-Pro closet % ls -l one/two 
+total 0
+-rw-r--r--  1 root  staff  0 Jan 25 14:14 glass.txt
+lalcastro@Lals-MacBook-Pro closet % cd ..
+lalcastro@Lals-MacBook-Pro Documents % sudo chown -R lalcastro closet
+lalcastro@Lals-MacBook-Pro Documents % ls -l
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drwxr-xr-x  3 lalcastro  staff    96 Jan 25 14:13 closet
+drwxr-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % ls -l closet/one/two
+total 0
+-rw-r--r--  1 lalcastro  staff  0 Jan 25 14:14 glass.txt
+lalcastro@Lals-MacBook-Pro Documents % 
