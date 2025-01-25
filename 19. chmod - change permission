@@ -1,0 +1,90 @@
+lalcastro@Lals-MacBook-Pro Documents % ls -l
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drwxr-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % chmod u=rw newFolder 
+lalcastro@Lals-MacBook-Pro Documents % ls -l               
+total 0
+drwxr-xr-x@ 5 lalcastro  staff   160 Jan 14 12:48 Projects
+drw-r-xr-x  9 lalcastro  _guest  288 Jan 25 12:17 newFolder
+lalcastro@Lals-MacBook-Pro Documents % cd newFolder 
+cd: permission denied: newFolder
+lalcastro@Lals-MacBook-Pro Documents % chmod u=rwx newFolder 
+lalcastro@Lals-MacBook-Pro Documents % cd newFolder         
+lalcastro@Lals-MacBook-Pro newFolder % ls
+A-folder			C-folder			sample_semi_colon_data.txt
+B-folder			a.txt				sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rw-r--r--  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % chown _guest a.txt
+chown: _guest: illegal user name
+lalcastro@Lals-MacBook-Pro newFolder % sudo chown _guest a.txt
+Password:
+chown: _guest: illegal user name
+lalcastro@Lals-MacBook-Pro newFolder % sudo chown root a.txt  
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rw-r--r--  1 root       staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % sudo chown lalcastro a.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls -
+ls: -: No such file or directory
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rw-r--r--  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % chmod 0=w a.txt 
+chmod: Invalid file mode: 0=w
+lalcastro@Lals-MacBook-Pro newFolder % chmod o=w a.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rw-r---w-  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % chmod u=rwx a.txt 
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rwxr---w-  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % file a.txt 
+a.txt: ASCII text
+lalcastro@Lals-MacBook-Pro newFolder % chmod +x sample_table_data.txt 
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rwxr---w-  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rwxr-xr-x@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % chmod -x sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % ls -l
+total 24
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:12 A-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 B-folder
+drwxr-xr-x  2 lalcastro  staff   64 Jan 25 10:13 C-folder
+-rwxr---w-  1 lalcastro  staff   34 Jan 25 11:45 a.txt
+-rw-r--r--@ 1 lalcastro  staff  169 Jan 25 12:17 sample_semi_colon_data.txt
+-rw-r--r--@ 1 lalcastro  staff  309 Jan 25 12:05 sample_table_data.txt
+lalcastro@Lals-MacBook-Pro newFolder % 
