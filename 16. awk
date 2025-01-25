@@ -168,3 +168,25 @@ Eve 40
 Charlie 25
 Diana 32
 lalcastro@Lals-MacBook-Pro newFolder % 
+lalcastro@Lals-MacBook-Pro newFolder % awk '/Engineering/ {print}' sample_table_data.txt
+John         30      Engineering      50000
+Charlie      25      Engineering      40000
+lalcastro@Lals-MacBook-Pro newFolder % awk '/Engineering|HR/ {print}' sample_table_data.txt
+John         30      Engineering      50000
+Alice        28      HR               45000
+Charlie      25      Engineering      40000
+lalcastro@Lals-MacBook-Pro newFolder % awk '/o/ {print}' sample_table_data.txt
+John         30      Engineering      50000
+Bob          35      Marketing        55000
+lalcastro@Lals-MacBook-Pro newFolder % awk '/i/ {print}' sample_table_data.txt
+John         30      Engineering      50000
+Alice        28      HR               45000
+Bob          35      Marketing        55000
+Eve          40      Finance          60000
+Charlie      25      Engineering      40000
+Diana        32      Marketing        48000
+lalcastro@Lals-MacBook-Pro newFolder % awk '$1~/i/ {print}' sample_table_data.txt
+Alice        28      HR               45000
+Charlie      25      Engineering      40000
+Diana        32      Marketing        48000
+lalcastro@Lals-MacBook-Pro newFolder % 
