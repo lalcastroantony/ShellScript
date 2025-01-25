@@ -1,0 +1,31 @@
+Last login: Sat Jan 25 15:52:38 on ttys000
+Hello Lal :)
+➜  ~ read myvalue
+hello there
+➜  ~ echo $myvalue
+hello there
+➜  ~ read -p "type your age" age
+read: -p: no coprocess
+➜  ~ bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ read -p "type your age" age
+type your age 30
+bash-3.2$ echo $age
+30
+bash-3.2$ bash
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ exit
+exit
+bash-3.2$ exit
+exit
+➜  ~ read -s password
+➜  ~ echo $password
+somePassword
+➜  ~     
+
