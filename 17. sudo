@@ -1,0 +1,15 @@
+lalcastro@Lals-MacBook-Pro ~ % cd
+lalcastro@Lals-MacBook-Pro ~ % sudo bash
+Password:
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2# whoami
+root
+bash-3.2# exit
+exit
+lalcastro@Lals-MacBook-Pro ~ % whoami
+lalcastro
+lalcastro@Lals-MacBook-Pro ~ % 
+
