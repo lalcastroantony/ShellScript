@@ -14,7 +14,7 @@ To use the scripts in this repository:
 
 2. Run any script:
    ```bash
-   ./script_name.sh
+   ./scripts/script_name.sh
    ```
    Make sure the script has execution permissions. If not, you can add them:
    ```bash
